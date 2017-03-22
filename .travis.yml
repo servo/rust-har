@@ -1,0 +1,24 @@
+language: rust
+
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
+
+os:
+  - linux
+  - osx
+
+env:
+  - BUILD_KIND=DEBUG
+  - BUILD_KIND=RELEASE
+
+notifications:
+  webhooks: http://build.servo.org:54856/travis
+
+branches:
+  only:
+    - master

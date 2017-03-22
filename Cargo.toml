@@ -3,3 +3,8 @@
 name = "har"
 version = "0.0.4"
 authors = ["Zachary Newman <znewman01@gmail.com>"]
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
