@@ -1,0 +1,15 @@
+language: rust
+
+rust:
+  - stable
+  - beta
+
+os:
+  - linux
+
+notifications:
+  webhooks: http://build.servo.org:54856/travis
+
+branches:
+  only:
+    - master
